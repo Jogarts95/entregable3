@@ -1,0 +1,19 @@
+body {
+    background-color: #071416;
+}
+
+.App__images {
+    background: url("./images/HeaderImage.jpg");
+    background-size:cover, 100% 97%;
+    height: 120px;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) { 
+    .App__images {
+        background: url("./images/HeaderImage.jpg");
+        background-size:cover, 100% 97%;
+        height: 760px;
+        background-repeat: no-repeat;
+    }
+}

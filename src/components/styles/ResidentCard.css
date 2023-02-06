@@ -1,0 +1,110 @@
+.residentCard {
+    background-color: #062226;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.residentCard__status {
+    position: absolute;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
+    background-color: #062226;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.residentCard__status-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.Dead {
+    background-color: #f00;
+}
+
+.Alive {
+    background-color: #adff2f;
+}
+
+.unknown {
+    background-color: #8b8989;
+}
+
+.residentCard__status-name {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.residentCard__info {
+    padding: 20px;
+}
+
+.residentCard__name {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.residentCard__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.residentCard__item span {
+    color: #8b8989;
+    font-weight: bold;
+    display: block;
+}
+
+.residentCard:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -9px;
+    left:-9px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(15px);
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    
+}
+
+.residentCard:active {
+    color: #062226;
+}
+
+.residentCard:hover:before {
+    opacity: 1;
+}
+
+.residentCard:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #062226;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
