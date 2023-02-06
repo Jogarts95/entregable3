@@ -4,7 +4,7 @@ body {
 
 .App__images {
     background: url("./images/HeaderImage.jpg");
-    background-size:cover, 100% 97%;
+    background-size:contain, 100% 97%;
     height: 120px;
     background-repeat: no-repeat;
 }
@@ -12,8 +12,8 @@ body {
 @media (min-width: 768px) { 
     .App__images {
         background: url("./images/HeaderImage.jpg");
-        background-size:cover, 100% 97%;
-        height: 760px;
+        background-size:contain;
+        height: 570px;
         background-repeat: no-repeat;
     }
 }
