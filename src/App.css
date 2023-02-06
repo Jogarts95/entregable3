@@ -5,7 +5,6 @@ body {
 .App__images {
     background: url("./images/HeaderImage.jpg");
     background-size:cover;
-    height: 120px;
     background-repeat: no-repeat;
 }
 

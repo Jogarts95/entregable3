@@ -1,11 +1,9 @@
 .locationInfo {
     display: flex;
     flex-direction: column;
-    background-color: #062226;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 15px;
     gap: 30px;
+    padding: 15px;
+    background-color: #062226;
     color: #fff;
 }
 
@@ -26,10 +24,9 @@
 } 
 
 .locationInfo__text-header {
+    text-align: center;
     color: #43c318;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 @media (min-width: 768px) { 
@@ -44,16 +41,13 @@
 } 
 
 .locationInfo__list {
-    display: flex;
-    justify-content: space-between;
-    line-height: 1px;
+    text-align: center;
 }
 
 @media (min-width: 768px) { 
     .locationInfo__list {
         display: flex;
         justify-content: space-around;
-        line-height: 7px;
         margin-bottom: 25px;
         margin-top: 25px;
     }
@@ -62,9 +56,7 @@
 .locationInfo__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+    padding: 15px;
 }
 
 @media (min-width: 768px) { 
